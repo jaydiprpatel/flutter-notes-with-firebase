@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "552787686868",
+    "project_id": "finworh-task",
+    "storage_bucket": "finworh-task.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552787686868:android:ba30c5b725a98b0735d241",
+        "android_client_info": {
+          "package_name": "com.example.firebase_task"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiWaQS5tTq2JVDTN5kJK9YueBec_CFuiM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
