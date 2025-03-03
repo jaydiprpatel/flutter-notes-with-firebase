@@ -1,16 +1,20 @@
-# firebase_task
+# Firebase Task Notes App
 
-A new Flutter project.
+A simple notes app using Flutter and Firebase.
 
-## Getting Started
+## Screenshots
 
-This project is a starting point for a Flutter application.
+### Register Screen
+![Register new User to firebase Screen](assets/screenshots/screenshot1.png)
 
-A few resources to get you started if this is your first Flutter project:
+### Login Screen
+![Login Screen](assets/screenshots/screenshot2.png)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Home Note Screen
+![Home Screen](assets/screenshots/screenshot3.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Selection Screen
+![Select items to delete Screen](assets/screenshots/screenshot4.png)
+
+### Create Note Screen
+![Create New Note Screen](assets/screenshots/screenshot5.png)
