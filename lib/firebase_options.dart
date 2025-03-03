@@ -41,48 +41,48 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDBJgvttIcsuHlaHK618GFb4VmcevH5kHc',
-    appId: '1:552787686868:web:c294e5934c3ba86835d241',
-    messagingSenderId: '552787686868',
-    projectId: 'finworh-task',
-    authDomain: 'finworh-task.firebaseapp.com',
-    storageBucket: 'finworh-task.firebasestorage.app',
-    measurementId: 'G-VVGC8XJS13',
+    apiKey: '', // replace your api key here
+    appId: '', // replace your web app id here
+    messagingSenderId: '',
+    projectId: '',
+    authDomain: '',
+    storageBucket: '',
+    measurementId: '',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBiWaQS5tTq2JVDTN5kJK9YueBec_CFuiM',
-    appId: '1:552787686868:android:ba30c5b725a98b0735d241',
-    messagingSenderId: '552787686868',
-    projectId: 'finworh-task',
-    storageBucket: 'finworh-task.firebasestorage.app',
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
+    projectId: '',
+    storageBucket: '',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDseeZJVQY4fW7X8vVTlIM-m2EJwdPfDQw',
-    appId: '1:552787686868:ios:9c71e58c2a3caf8a35d241',
-    messagingSenderId: '552787686868',
-    projectId: 'finworh-task',
-    storageBucket: 'finworh-task.firebasestorage.app',
-    iosBundleId: 'com.example.firebaseTask',
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
+    projectId: '',
+    storageBucket: '',
+    iosBundleId: '',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyDseeZJVQY4fW7X8vVTlIM-m2EJwdPfDQw',
-    appId: '1:552787686868:ios:9c71e58c2a3caf8a35d241',
-    messagingSenderId: '552787686868',
-    projectId: 'finworh-task',
-    storageBucket: 'finworh-task.firebasestorage.app',
-    iosBundleId: 'com.example.firebaseTask',
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
+    projectId: '',
+    storageBucket: '',
+    iosBundleId: '',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyDBJgvttIcsuHlaHK618GFb4VmcevH5kHc',
-    appId: '1:552787686868:web:d0bf24faeab6512735d241',
-    messagingSenderId: '552787686868',
-    projectId: 'finworh-task',
-    authDomain: 'finworh-task.firebaseapp.com',
-    storageBucket: 'finworh-task.firebasestorage.app',
-    measurementId: 'G-6PM8VQ49JW',
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
+    projectId: '',
+    authDomain: '',
+    storageBucket: '',
+    measurementId: '',
   );
 }
