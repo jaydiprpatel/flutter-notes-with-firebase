@@ -6,7 +6,11 @@ class EditNotePage extends StatefulWidget {
   final String title;
   final String description;
 
-  const EditNotePage({super.key, required this.noteId, required this.title, required this.description});
+  const EditNotePage(
+      {super.key,
+      required this.noteId,
+      required this.title,
+      required this.description});
 
   @override
   _EditNotePageState createState() => _EditNotePageState();
@@ -24,7 +28,10 @@ class _EditNotePageState extends State<EditNotePage> {
   }
 
   void _saveNote() async {
-    await FirebaseFirestore.instance.collection('notes').doc(widget.noteId).update({
+    await FirebaseFirestore.instance
+        .collection('notes')
+        .doc(widget.noteId)
+        .update({
       'title': _titleController.text,
       'description': _descriptionController.text,
     });
@@ -36,29 +43,53 @@ class _EditNotePageState extends State<EditNotePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Edit Note"),
+        title: const Text(
+          "Edit Note",
+          style: TextStyle(color: Colors.white),
+        ),
+        flexibleSpace: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              colors: [Colors.deepPurple, Colors.deepPurpleAccent],
+            ),
+          ),
+        ),
+        iconTheme: const IconThemeData(color: Colors.white),
         actions: [
           IconButton(
-            icon: const Icon(Icons.save),
+            icon: const Icon(Icons.done, color: Colors.white,),
             onPressed: _saveNote,
           ),
         ],
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          children: [
-            TextField(
-              controller: _titleController,
-              decoration: const InputDecoration(labelText: 'Title'),
-            ),
-            const SizedBox(height: 10),
-            TextField(
-              controller: _descriptionController,
-              decoration: const InputDecoration(labelText: 'Description'),
-              maxLines: 5,
-            ),
-          ],
+      body: Container(
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            colors: [Colors.deepPurple, Colors.deepPurpleAccent],
+          ),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            children: [
+              TextField(
+                controller: _titleController,
+                style: const TextStyle(color: Colors.white),
+                decoration: const InputDecoration(
+                    labelText: 'Title',
+                    labelStyle: TextStyle(color: Colors.white)),
+              ),
+              const SizedBox(height: 10),
+              TextField(
+                controller: _descriptionController,
+                style: const TextStyle(color: Colors.white),
+                decoration: const InputDecoration(
+                    labelText: 'Description',
+                    labelStyle: TextStyle(color: Colors.white)),
+                maxLines: 5,
+              ),
+            ],
+          ),
         ),
       ),
     );

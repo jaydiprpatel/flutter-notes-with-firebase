@@ -55,29 +55,41 @@ class _CreateNotePageState extends State<CreateNotePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Create / Edit Note"),
+        title: const Text("Create", style: TextStyle(color: Colors.white),),
+        flexibleSpace: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              colors: [Colors.deepPurple, Colors.deepPurpleAccent],
+            ),
+          ),
+        ),
+        iconTheme: const IconThemeData(color: Colors.white),
         actions: [
           IconButton(
-            icon: const Icon(Icons.save),
+            icon: const Icon(Icons.done, color: Colors.white,),
             onPressed: _saveNote, // Save note on tap
           ),
         ],
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          children: [
-            TextField(
-              controller: _titleController,
-              decoration: const InputDecoration(labelText: "Title"),
-            ),
-            const SizedBox(height: 10),
-            TextField(
-              controller: _descriptionController,
-              decoration: const InputDecoration(labelText: "Description"),
-              maxLines: 5,
-            ),
-          ],
+      body: Container( decoration: const BoxDecoration(gradient: LinearGradient(colors: [Colors.deepPurple, Colors.deepPurpleAccent]),),
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            children: [
+              TextField(
+                controller: _titleController,
+                style: const TextStyle(color: Colors.white),
+                decoration: const InputDecoration(labelText: "Title", labelStyle: TextStyle(color: Colors.white)),
+              ),
+              const SizedBox(height: 10),
+              TextField(
+                controller: _descriptionController,
+                style: const TextStyle(color: Colors.white),
+                decoration: const InputDecoration(labelText: "Description", labelStyle: TextStyle(color: Colors.white)),
+                maxLines: 5,
+              ),
+            ],
+          ),
         ),
       ),
     );

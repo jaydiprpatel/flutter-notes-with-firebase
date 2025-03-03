@@ -17,6 +17,8 @@ class _HomePageState extends State<HomePage> {
   List<String> selectedNotes = []; // Store selected note IDs
   bool isSelectionMode = false; // Toggle selection mode
 
+
+// Add selected items to the list
   void _toggleSelection(String noteId) {
     setState(() {
       if (selectedNotes.contains(noteId)) {
@@ -28,6 +30,8 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
+
+// Delete selected notes
   void _deleteSelectedNotes() async {
     for (String noteId in selectedNotes) {
       await FirebaseFirestore.instance.collection('notes').doc(noteId).delete();
@@ -57,7 +61,7 @@ class _HomePageState extends State<HomePage> {
         title: Text(isSelectionMode ? "${selectedNotes.length} Selected" : "$userName's Notes", style: const TextStyle(color: Colors.white),),
         leading: isSelectionMode
             ? IconButton(
-                icon: const Icon(Icons.close, color: Colors.black),
+                icon: const Icon(Icons.close, color: Colors.white),
                 onPressed: () {
                   setState(() {
                     selectedNotes.clear();
@@ -78,7 +82,7 @@ class _HomePageState extends State<HomePage> {
         actions: isSelectionMode
             ? [
                 IconButton(
-                  icon: const Icon(Icons.delete, color: Colors.black),
+                  icon: const Icon(Icons.delete, color: Colors.white),
                   onPressed: _deleteSelectedNotes,
                 )
               ]

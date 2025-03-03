@@ -23,6 +23,8 @@ class _LoginState extends State<Login> {
   bool _registerUi = false;
   bool _isObscure = true;
 
+
+// Get user name after successful Login
   Future<String?> getUserName() async {
     User? user = FirebaseAuth.instance.currentUser;
     if (user != null) {
@@ -35,6 +37,8 @@ class _LoginState extends State<Login> {
     return null;
   }
 
+
+// Login with firebase
   Future<void> _login() async {
     setState(() {
       _isLoading = true;
@@ -79,6 +83,8 @@ class _LoginState extends State<Login> {
     }
   }
 
+
+// SignUp with Firebase
   Future<void> _registerUser(String name, String email, String password) async {
     setState(() {
       _isLoading = true;
@@ -131,6 +137,8 @@ class _LoginState extends State<Login> {
     );
   }
 
+
+//Login Screen Block
   Widget _loginUi() {
     return Center(
       child: LayoutBuilder(
@@ -233,6 +241,7 @@ class _LoginState extends State<Login> {
     );
   }
 
+//Register Screen Block
   Widget _regUi() {
     return Center(
       child: LayoutBuilder(
