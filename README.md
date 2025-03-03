@@ -5,16 +5,16 @@ A simple notes app using Flutter and Firebase.
 ## Screenshots
 
 ### Register Screen
-![Register new User to firebase Screen](assets/screenshots/screenshot1.jpg)
+<img src="assets/screenshots/screenshot1.jpg" alt="Register Screen" width="400">
 
 ### Login Screen
-![Login Screen](assets/screenshots/screenshot2.jpg)
+<img src="assets/screenshots/screenshot2.jpg" alt="Login Screen" width="400">
 
 ### Home Note Screen
-![Home Screen](assets/screenshots/screenshot3.jpg)
+<img src="assets/screenshots/screenshot3.jpg" alt="Home Screen" width="400">
 
 ### Selection Screen
-![Select items to delete Screen](assets/screenshots/screenshot4.jpg)
+<img src="assets/screenshots/screenshot4.jpg" alt="Selection Screen" width="400">
 
 ### Create Note Screen
-![Create New Note Screen](assets/screenshots/screenshot5.jpg)
+<img src="assets/screenshots/screenshot5.jpg" alt="Create Note Screen" width="400">
